@@ -47,7 +47,7 @@ class Usuario(ABC):
     def guardarImagen(self):
         pass
     def enviarCorreo(self):
-        
+        pass
     
     @property
     def nombreUsuario(self):
