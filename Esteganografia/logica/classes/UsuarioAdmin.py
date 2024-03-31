@@ -2,7 +2,7 @@ from Usuario import Usuario
 
 class UsuarioAdmin(Usuario):
     
-    def __init__(self, nombreUsuario, nombre, contrasena, correo, documento):
+    def __init__(self, nombreUsuario="", nombre="", contrasena="", correo="", documento=""):
         super().__init__(nombreUsuario, nombre, contrasena, correo, documento)
     
     def verUsuarios(self):
@@ -16,9 +16,6 @@ class UsuarioAdmin(Usuario):
     #--------------------------
     
     def crearUsuario(self):
-        pass
-    
-    def iniciarSesion(self):
         pass
     
     def recuperarContrasena(self):

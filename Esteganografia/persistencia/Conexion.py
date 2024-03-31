@@ -50,7 +50,7 @@ class Conexion:
                 'dbname': self._database,
                 'user' : self._user,
                 'password' : self._password,
-                'host' : self._url,  # Solo el nombre del host o la dirección IP
+                'host' : self._url,
                 'port' : self._port          
             }
             conexion = psycopg2.connect(**credenciales)
@@ -60,6 +60,5 @@ class Conexion:
         except Exception as e:
             print("Ha ocurrido un error en la conexión:", e)
 
-# Corrige la URL del host aquí:
-conexion = Conexion("bubble.db.elephantsql.com", 5432, "kjvgttho", "ltm-xd9v1tZRvF2CwG_1zFX93xnfij6H", "kjvgttho")
-conexion.conectar()
+
+

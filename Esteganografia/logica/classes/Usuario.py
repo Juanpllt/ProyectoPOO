@@ -10,21 +10,6 @@ class Usuario(ABC):
         self._correo = correo
         self._documento = documento
     
-    
-    @abc.abstractmethod
-    def crearUsuario():
-        pass
-    
-    @abc.abstractmethod
-    def iniciarSesion(self):
-        pass
-    
-    @abc.abstractmethod
-    def recuperarContrasena(self):
-        pass
-    
-    
-    
     def verAnteriores(self):
         pass
     
@@ -48,6 +33,7 @@ class Usuario(ABC):
         pass
     def enviarCorreo(self):
         pass
+    
     
     @property
     def nombreUsuario(self):
