@@ -3,37 +3,29 @@ from abc import ABC
 
 class Usuario(ABC):
     
-    def __init__(self, nombreUsuario, nombre, contrasena, correo, documento):
+    def __init__(self,id,  nombreUsuario, nombre, contrasena, correo, documento, rol):
+        self.id = id
         self._nombreUsuario = nombreUsuario
         self._nombre = nombre
         self._contrasena = contrasena
         self._correo = correo
         self._documento = documento
+        self._rol = rol
     
-    def verAnteriores(self):
-        pass
     
-    def cifrar(self):
-        pass
-    def esconderMensaje(self):
-        pass
-    def mostrarMensaje(self):
-        pass
-    def descifrar(self):
-        pass
-    def cerrarSesion(self):
-        pass
-    def salir(self):
-        pass
-    def guardarTexto(self):
-        pass
-    def guardarProceso(self):
-        pass
-    def guardarImagen(self):
-        pass
-    def enviarCorreo(self):
-        pass
+    @property
+    def id(self):
+        return self._id
+    @id.setter
+    def id(self, id):
+        self._id = id
     
+    @property
+    def rol(self):
+        return self._rol
+    @rol.setter
+    def rol(self, rol):
+        self._rol = rol
     
     @property
     def nombreUsuario(self):
